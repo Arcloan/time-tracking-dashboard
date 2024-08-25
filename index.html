@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="populate.js" defer></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="special_card">
+          <div class="with_image">
+            <img src="images/image-jeremy.png" alt="" />
+            <p>
+              Report for <br />
+              <span class="name"> Jeremy Robson </span>
+            </p>
+          </div>
+          <div class="flex__buttons">
+            <button class="Daily" data-selected="true">Daily</button>
+            <button class="Weekly">Weekly</button>
+            <button class="Monthly">Monthly</button>
+          </div>
+        </div>
+        <div class="card work">
+          <div class="card_content">
+            <div class="flex__work">
+              <p class="white_color">Work</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card play">
+          <div class="card_content">
+            <div class="flex__play">
+              <p class="white_color">Play</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card study">
+          <div class="card_content">
+            <div class="flex__study">
+              <p class="white_color">Study</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card exercise">
+          <div class="card_content">
+            <div class="flex__exercise">
+              <p class="white_color">Exercise</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card social">
+          <div class="card_content">
+            <div class="flex__social">
+              <p class="white_color">Social</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card self-care">
+          <div class="card_content">
+            <div class="flex__self-care">
+              <p class="white_color">Self Care</p>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="flex__time">
+              <p class="white_color bigger_size">
+                <span class="current"></span>hrs
+              </p>
+              <p>Last week - <span class="previous"></span>hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
