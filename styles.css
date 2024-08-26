@@ -97,7 +97,7 @@ body {
 
 
 .card_content {
-    padding: 1em;
+    padding: 1.5em;
     background-color: var(--dark-blue);
     border-radius: 1em;
     color: var(--desaturated-blue);
@@ -173,4 +173,54 @@ body {
 
 svg:hover {
     cursor: pointer;
+}
+
+@media (min-width : 900px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+    
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .special_card {
+        grid-row: span 2;
+    }
+
+
+    .bigger_size {
+        font-size: 2.75rem;
+    }
+
+    .card {
+        display: flex;
+        align-items: end;
+    }
+
+    .card > * {
+        flex: 1;
+    }
+
+    .flex__time {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .with_image {
+        flex-direction: column;
+        gap: 1.5rem;
+        height: 45vh;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .flex__buttons {
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
 }

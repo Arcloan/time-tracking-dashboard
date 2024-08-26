@@ -1,5 +1,4 @@
 let buttons = document.querySelectorAll("button");
-let active = document.querySelector("[data-selected]");
 let buttons_container = document.querySelector(".flex__buttons");
 
 function populate (timeframe) {
@@ -13,7 +12,7 @@ function populate (timeframe) {
         for (let item of obj) {
             let curr_card_title = item.title.replace(" ", "-").toLowerCase();
             let card = document.querySelector(`.${curr_card_title}`);
-            let selected = active.textContent.toLowerCase();
+            let selected = timeframe;
             for (let time of Object.keys(item.timeframes[selected])) {
                 let el = card.querySelector(`.${time}`);
                 el.textContent = item.timeframes[selected][time];
@@ -25,6 +24,7 @@ function populate (timeframe) {
 }
 
 window.addEventListener("load", (e) => {
+    let active = document.querySelector("[data-selected]");
     populate(active.textContent.toLowerCase());
 })
 
@@ -35,7 +35,6 @@ buttons_container.addEventListener("click", (e) => {
         b.removeAttribute("data-selected");
     }
     e.target.dataset.selected = true;
-    active = e.target;
     populate(e.target.textContent.toLowerCase());
     
 })
