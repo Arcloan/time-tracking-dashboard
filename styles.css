@@ -211,7 +211,7 @@ svg:hover {
     .with_image {
         flex-direction: column;
         gap: 1.5rem;
-        height: 45vh;
+        padding-bottom: 5em;
     }
 
     .name {
